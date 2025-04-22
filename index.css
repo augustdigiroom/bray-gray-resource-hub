@@ -1,0 +1,273 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Winky Rough', sans-serif;
+    color: #ffffff;
+}
+
+ .landing-section {
+      background-image: url(./images/homepage.jpg);
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-align: center;
+    }
+
+.landing-section::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background-color: rgba(0, 0, 0, 0.6); /* Adjust darkness here */
+      z-index: 1;
+    }
+
+.landing-content {
+      position: relative;
+      z-index: 2;
+    }
+
+.landing-content h1 {
+      font-size: 3rem;
+      font-weight: bold;
+    }
+
+.shop-btn {
+      margin-top: 20px;
+      padding: 12px 30px;
+      font-size: 1.2rem;
+      color: #000;
+      background-color: #fff;
+      border: none;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+.shop-btn:hover {
+      background-color: #007bff;
+      color: #fff;
+    }
+
+.shop-btn:active {
+      background-color: #0056b3;
+      color: #fff;
+    }
+
+
+.navbar {
+  background-color: white !important;
+}
+
+.navbar-brand,
+.navbar-nav .nav-link {
+  font-family: 'Winky Rough', cursive;
+  color: blue !important;
+}
+
+.landing-section {
+  background-image: url(./images/homepage.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  position: relative; /* Essential fix */
+}
+
+.lucky-eye-title {
+  font-family: 'Libre Bodoni', serif;
+}
+
+.custom-title {
+      font-family: 'Libre Bodoni', serif;
+      color: #007BFF; /* Bootstrap Blue */
+    }
+
+.custom-paragraph {
+      font-family: 'Winky Rough', cursive;
+      color: #000000;
+    }
+
+.section-container {
+      padding: 50px 0;
+    }
+
+.carousel-img {
+      height: 300px;
+      object-fit: cover;
+    }
+
+/* Carousel Section Background */
+.carousel-section {
+    background-color: #fdf9f8;
+}
+
+/* Make carousel images square */
+.carousel-img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    margin: 0 auto;
+    display: block;
+}
+
+.card {
+      border: 2px solid #007bff; /* Blue border */
+    }
+
+.card-img-top {
+      object-fit: cover;
+      height: 200px;
+    }
+
+.site-footer {
+  background-color: #001f3f; /* Dark blue */
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  font-family: sans-serif;
+}
+
+.site-footer p {
+  margin: 0;
+}
+ 
+/* Responsive Typography */
+.landing-content h1 {
+  font-size: 2rem;
+}
+
+@media (min-width: 576px) {
+  .landing-content h1 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .landing-content h1 {
+    font-size: 3rem;
+  }
+}
+
+/* Responsive Button */
+.shop-btn {
+  font-size: 1rem;
+  padding: 10px 25px;
+}
+
+@media (min-width: 768px) {
+  .shop-btn {
+    font-size: 1.2rem;
+    padding: 12px 30px;
+  }
+}
+
+/* Make carousel and cards responsive */
+.carousel-img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+}
+
+.card-img-top {
+  height: auto;
+  max-height: 200px;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* Stack text and image on smaller devices */
+@media (max-width: 767.98px) {
+  .carousel-section .row {
+    flex-direction: column;
+  }
+
+  .carousel-section .col-md-6 {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+}
+
+/* Make featured products stack on small screens */
+@media (max-width: 767.98px) {
+  #products .col-md-4 {
+    width: 100%;
+  }
+}
+
+/* Black text for "Discover new knowledge" */
+.custom-subtitle {
+    color: #000000;
+    font-family: 'Libre Bodoni', serif;
+}
+
+/* Resource card button */
+.resource-btn {
+    background-color: #007BFF; /* Blue */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+/* Hover state for button */
+.resource-btn:hover {
+    background-color: #28a745; /* Green */
+    color: white;
+}
+
+
+.category-listing-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 40px;
+    max-width: 600px;
+    margin: auto;
+}
+
+.category-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid #007bff; /* Blue border */
+    padding: 15px 20px;
+    border-radius: 8px;
+    background-color: white;
+}
+
+.category-text {
+    font-family: 'Winky Rough', cursive;
+    color: blue;
+    font-size: 1.5rem;
+}
+
+.category-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-family: 'Winky Rough', cursive;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+}
+
+.category-btn:hover {
+    background-color: #28a745; /* Green */
+}
